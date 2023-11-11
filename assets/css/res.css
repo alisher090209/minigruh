@@ -1,0 +1,23 @@
+@media only screen and (max-width:768px) {
+    .navbar{
+        justify-content: space-between;
+    }
+    .navbar__nav a{
+        display: none;
+    }
+    .navbar__nav button{
+        display: none;
+    }
+    .navbar .fa-bars{
+        display: block;
+        font-size: 2.5rem;
+        top: 0;
+        right: 20px;
+    }
+  
+    .banner__content{
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 3rem;
+    }
+}
