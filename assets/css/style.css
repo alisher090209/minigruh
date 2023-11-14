@@ -23,8 +23,7 @@ body {
 img {
   width: 100%;
   height: 100%;
-  display: block;
-}
+  display: block;}
 
 :root {
   --contoro: "Castoro Titling", cursive;
@@ -41,7 +40,11 @@ img {
 }
 .header{
     width: 100%;
-    height: 100vh;
+    height: 100%;
+    background-image: url(/assets/images/blob-1.svg);
+    background-size: 110% 90%;
+    background-repeat: no-repeat;
+    background-position: -100% -100%;
 }
 .navigation{
     width: 100%;
@@ -50,7 +53,7 @@ img {
 }
 .navbar{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 .navbar .fa-bars{
@@ -69,12 +72,12 @@ img {
     color: black;
 }
 .navbar__nav button{
-    padding: 0.7rem 2rem;
+    padding: 0.5rem 2rem;
     border: 3px solid #081158;
     outline: 0;
     border-radius: 33px;
     background-color: #081158;
-    color: #C59647;
+    color: #FBB244;
     font-family: var(--real);
     transition: all .5s linear;
 }
@@ -88,7 +91,7 @@ img {
 /* banner */
 .banner{
     width: 100%;
-    padding: 4.8rem 0;
+    padding: 2.8rem 0;
 }
 .banner__content{
     display: grid;
@@ -130,7 +133,7 @@ img {
     outline: 0;
     border-radius: 33px;
     background-color: #081158;
-    color: #C59647;
+    color: #FBB244;
     font-family: var(--real);
     transition: all .2s linear;
 }
@@ -155,21 +158,20 @@ img {
 }
 
 /* features */
-
-.features{
+.features
+{
     width: 100%;
     padding: 4.8rem 0;
-    margin: 0 auto; 
 }
 .title{
     text-align: center;
     font-family: var(--ubuntu);
-    margin: 0 auto;
+    margin-bottom: 3rem;
 }
 .title b{
     display: inline-block;
     padding: 5px 20px;
-    color: #f9ab37;
+    color: #FBB244;
     text-transform: uppercase;
     background-color: rgba(251, 178, 68, 0.2);
     border-radius: 30px;
@@ -177,17 +179,251 @@ img {
     text-transform: uppercase;
     font-weight: 700;
     background-color: #FEF0DA;
-    margin-top: 3rem;
-    margin-bottom: 0.8rem;
-}
-.title h2{
-    color: #081158;
-    font-size: 3rem;
-    margin-bottom: 0.5rem;
-}
-.title p{
-    width:40%;
-    font-size: 1rem;
-    margin-left: 29%;
-    color: #979797;
-}
+    margin-bottom: 1rem;}
+    .title h2{
+        color: #081158;
+        font-size: 3rem;
+        margin-bottom: 0.5rem;
+    }
+    .title p{
+        width: 60%;
+        margin-left: 19%;
+        color: dimgrey;
+    }
+    .fetures__content{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 3rem;
+        margin-top: 7rem;
+    }
+   .fetures__content .item{
+        width: 100%;
+        padding: 22px;
+        text-align: center;
+        font-family: var(--ubuntu);
+    }
+    .fetures__content i{
+        color:#7D7D7D;
+        font-size: 3rem;
+        margin-bottom: 0.5rem;
+    }
+    .fetures__content .icon{
+        position: relative  ;
+    }
+    .fetures__content .icon::before{
+        position: absolute;
+        content: "";
+        width: 40px;
+        height: 40px;
+        top: -20px;
+        left: 155px;
+        background-color: rgba(251, 178, 68, 0.5);
+        border-radius: 50%;
+        z-index: -1;
+    }
+   .fetures__content .item h3{
+        color: black;
+        font-weight: 900;
+        margin-bottom: 0.5rem;
+    }
+
+  .fetures__content  .item p{
+        color: darkgray;
+        font-weight: 50;
+        font-size: 15px;
+        width: 80%;
+        margin-left:30px;
+    }
+
+    /* about */
+    .about{
+        width: 100%;
+        padding: 4.8rem 0;
+        margin: 0 auto;
+    }
+    .about__content{
+        display: grid;
+        grid-template-columns: 60% 40%;
+        gap: 3rem;
+        font-family: var(--ubuntu);
+    }
+    .about__content .item b{
+    display: inline-block;
+    padding: 5px 20px;
+    color: #FBB244;
+    text-transform: uppercase;
+    background-color: rgba(251, 178, 68, 0.2);
+    border-radius: 30px;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: #FEF0DA;
+    margin-bottom: 1rem;
+    }    .about__content .item h4{     
+        color: darkgray;
+       font-weight: 50;
+       font-size: 15px;
+       width: 80%;
+       margin-left:30px;
+
+   }
+    .about__content .item h2{
+        color: #081158;
+        font-size: 2rem;
+        margin-bottom: 1.2rem;
+    }
+    .about__content .item p{
+        color: #7D7D7D;
+        margin-bottom: 1rem;
+    }
+.about__content .item button{
+        padding: 0.9rem 2rem;
+        outline: 0;
+        border: 0;
+        border-radius: 33px;
+        background-color: #081158;
+        color: #fff;
+        font-family: var(--real);
+        margin-top: 5rem;
+        transition: all .2s linear;
+    }
+    .about__content .item button:hover{
+        background-color: white;
+        color: #081158;
+        border: 1px solid #081158;
+    }
+
+    /* .services */
+
+    .services{
+        width: 100%;
+        padding: 4.8rem 0;
+    }
+    .services__content{
+        width: 70%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+        margin:  0 auto;
+        gap: 3rem;
+    }
+
+    .services__item{
+        padding: 30px;
+         border: 1px solid #efefef;
+         margin-bottom: 30px;
+        display: flex;
+        gap: 3rem;
+    }
+    .services__item .icon i{ 
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 80px;
+        flex: 0 0 80px;
+        font-size: 50px;
+        color:#7D7D7D;
+    }
+    .services__item .icon{
+        position: relative;
+    }
+    .services__item .icon::before{
+        position: absolute;
+        content: "";
+        width: 40px;
+        height: 40px;
+        top: -20px;
+        left: 27px;
+        background-color: rgba(251, 178, 68, 0.5);
+        border-radius: 50%;
+        z-index: -1;
+    }
+    .services__item .services__item__title h2{
+        font-family: var(--ubuntu);
+        font-size: 1.2rem;
+    }
+    .services__item .services__item__title p{
+        font-family: var(--ubuntu);
+        margin-top: 0.5rem;
+        color: #7D7D7D;
+    }
+
+    /* TESTIMONIALS */
+    .testimonial{
+        width: 100%;
+        padding: 5rem 0;
+        background-color: #F8F9FA;
+    }
+    .testimonial__content{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 2rem;
+    }
+    .testimonial__item{
+        width: 100%;
+        border-radius: 10px;
+        border: 1px solid rgb(133, 133, 133);
+        padding: 2rem ;
+        transition: all .2s  linear;
+        background-color: white;
+    }
+    .testimonial__item:hover{
+        border: 1px solid #081158;
+    }
+    .testimonial__item p{
+        font-family: var(--sanspro);
+        color: #7D7D7D;
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+    }
+    .testimonial__flex{
+        display: grid;
+        grid-template-columns: 25% 75%;
+    }
+    .flex__img img{
+        height: 60%;    
+        width: 60%;
+        border-radius: 333px;
+    }
+    .flex__title b{
+        color: #7D7D7D;
+    }
+
+    /* footer */
+    .footer
+    {
+        width: 100%;
+        padding: 4.8rem 0;
+    }
+    .footer__content{
+        margin-top: 5rem;
+        display: grid;
+        grid-template-columns: 30% 20% 20% 25%;
+        gap: 3rem;
+    }
+    .footer__item{
+        font-family: var(--ubuntu);
+    }
+    .footer__item h2{
+        color: #081158;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    .footer__item p{
+        color: #7D7D7D;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .footer__item i{
+        font-size: 2rem;
+        color: #081158;
+        margin-left: 10px ;
+    }
+    .footer__item a{
+        color:#7D7D7D;
+    }
+    .footer__item a:hover{
+        color:#081158;
+    }
+    .copyright{
+        width: 100%;
+        padding: 2.8rem 0;
+    }

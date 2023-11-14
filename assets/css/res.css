@@ -1,23 +1,85 @@
-@media only screen and (max-width:768px) {
-    .navbar{
-        justify-content: space-between;
+@media only screen and (max-width: 768px) {
+    .navigation {
+      width: 100%;
+      height: 10vh;
+      overflow: hidden;
+      padding-bottom: 4rem;
+      transition: all 0.5s linear;
     }
-    .navbar__nav a{
-        display: none;
+    .navigation .navbar {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 0.5rem;
     }
-    .navbar__nav button{
-        display: none;
+    .navbar .fa-bars {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      display: block;
+      font-size: 1.5rem;
+      padding: 5px 5px;
+      border: 1px solid white;
     }
-    .navbar .fa-bars{
-        display: block;
-        font-size: 2.5rem;
-        top: 0;
-        right: 20px;
+    .navbar .fa-bars:hover {
+      border: 1px solid black;
     }
-  
-    .banner__content{
-        display: grid;
-        grid-template-columns: 100%;
-        gap: 3rem;
+    .navigation .navbar .navbar__logo h1 {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      color: black;
+      font-size: 1.5rem;
+      margin-right: 100px;
     }
+    .navigation .navbar .navbar__nav {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+    .navigation .navbar .navbar__nav a {
+      margin-left: 0px;
+      margin-right: 0px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      display: block;
+      padding: 10px 10px;
+      transition: all 0.5s linear;
+    }
+
+    .navigation__add {
+      height: 80vh;
+      transition: all 0.5s linear;
+    }
+    .navigation__remove {
+      height: 10vh;
+      transition: all 0.5s linear;
+    }
+    /* 100% grid; */
+
+    .banner__content, .fetures__content, .about__content, .services__content, .testimonial__content{
+        grid-template-columns:100%;
+    }
+    .footer__content{
+      grid-template-columns: 100%;
+    }
+    .services__content{
+      width: 100%;
+  }
+
+    /* .title */
+    .title{
+      text-align: center;
+      font-family: var(--ubuntu);
+  }
+      .title p{
+          width: 100%;
+          margin-left: 0%;
+      }
+
+    .fetures__content .icon::before{
+      top: -20px;
+      left: 185px;
+  }
+
+
 }
